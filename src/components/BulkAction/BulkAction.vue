@@ -49,10 +49,23 @@
     padding-left: 2em;
     background-color: #E0E0E0;
 
+    @include small-screen {
+      flex-direction: column;
+      padding-left: 0em;
+    }
+
     .todo-name {
       flex-basis: 65%;
       display: flex;
       align-items: center;
+
+      @include small-screen {
+        flex-basis: 100%;
+        width: 100%;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+      }
 
       label {
         font-weight: bold;

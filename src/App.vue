@@ -34,6 +34,10 @@
     display: flex;
     flex-direction: column;
 
+    @include small-screen {
+      align-items: center;
+    }
+
     label {
       font-weight: bold;
     }
@@ -45,6 +49,7 @@
 
     select {
       height: 36px;
+      width: 100%;
     }
   }
 

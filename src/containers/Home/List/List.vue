@@ -56,5 +56,9 @@
   .list-container {
     flex-basis: 55%;
     position: relative;
+
+    @include small-screen {
+      margin-top: 1em;
+    }
   }
 </style>

@@ -30,5 +30,9 @@
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include small-screen {
+      flex-direction: column;
+    }
   }
 </style>
